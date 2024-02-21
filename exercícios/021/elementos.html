@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>pseudo-elementos</title>
+    <style>
+        body{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .primeira{
+            color: red;
+            text-decoration:none
+
+        }
+
+        .segunda:hover{
+            color: darkred;
+            text-decoration: underline;
+
+        }
+        .segunda{
+            color: red;
+            text-decoration: none;
+            
+        }
+
+        .terceira{
+            color: red;
+
+        }
+        .terceira:active{
+            color: chartreuse;
+        }
+
+        .quarta::after{
+            content: '[link]';
+            color: rgb(238, 255, 0);
+        }
+        .quarta:hover{
+            color:blue;
+            text-decoration: none;
+            
+        }
+        
+        .quarta{
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Links 1</h1>
+    <p >
+        <ul>
+            <li > <a class="primeira" href="https://acessounico.mec.gov.br/">Portal do acesso unico</a></li>
+            <li > <a class="primeira" href="https://www.cursoemvideo.com/">Curso em video</a></li>
+            
+        </ul>
+    </p>
+
+
+    <h1>Links 2</h1>
+    <p>
+        <ul>
+            <li ><a class="segunda" href="https://www.cursoemvideo.com/">Curso em video</a></li>
+            <li > <a class="segunda" href="https://acessounico.mec.gov.br/">Portal do acesso unico</a></li>
+            
+        </ul>
+    </p>
+
+
+    <h1>Links 3</h1>
+    <p>
+        <ul>
+            <li ><a class="terceira" href="https://www.cursoemvideo.com/">Curso em video</a></li>
+            <li ><a class="terceira" href="https://acessounico.mec.gov.br/">Portal do acesso unico</a></li>
+            
+        </ul>
+    </p>
+    <h1>Links 4</h1>
+    <p>
+        <ul>
+            <li ><a class="quarta" href="https://www.cursoemvideo.com/">Curso em video</a></li>
+            <li ><a class="quarta" href="https://acessounico.mec.gov.br/">Portal do acesso unico</a></li>
+            
+        </ul>
+    </p>
+
+
+    
+</body>
+</html>
