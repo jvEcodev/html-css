@@ -38,8 +38,8 @@ main{
     
     margin: auto;
     margin-bottom: 40px;
-    min-width: 300px;
-    max-width: 800px;
+    min-width: 330px;
+    max-width: 900px;
     padding: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -53,8 +53,7 @@ main img.pequena{
     max-width:  350px; 
 }
 
-
-body{
+    body{
     background-color: var(--cor0);
     font-family: var(--font-padrao);
 
