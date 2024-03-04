@@ -92,7 +92,8 @@ header > p > a:hover{
 
 section.imagem > p{
     background-color: rgba(240, 213, 213, 0.349);
-    width: 400px;
+    max-width: 400px;
+    min-width: 250px;
     display: inline-block;
     padding: 5px;
     color: white;
@@ -155,6 +156,7 @@ footer{
     color: white;
     text-align: center;
     height: 25px;
+    max-height: 40px;
     min-width: 300px;
     max-width: 850px;
     font-size: 20px;
