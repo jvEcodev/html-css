@@ -26,7 +26,7 @@
 }
 
 html,body{
-    background-color: rgb(206, 240, 206);
+    background-color: rgb(168, 185, 168);
     
 }
 
@@ -35,10 +35,11 @@ header{
 
     background-image: linear-gradient( to bottom, var(--co2), var(--cor1));
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     color: white;
-    height: 140px;
+    height: 160px;
     font-family: var(--font1);
+    box-shadow: 0px 10px 7px rgba(255, 255, 255, 0.63)
     
    
     
@@ -46,8 +47,10 @@ header{
 
 header > h1{
     
-    font-size: 4em;
+    font-size: 5em;
     font-variant: small-caps;
+    text-shadow: 0px 2px 9px ;
+    
 }
 
 header > p{
@@ -55,6 +58,7 @@ header > p{
     font-size: 3em;
     font-variant: small-caps ;
     padding-left: 30px; 
+    text-shadow: 0px 2px 9px ;
 }
 
 header > p > a{
@@ -70,21 +74,45 @@ header > p > a:hover{
 }
 
 .normal{
-    background-color: rgb(65, 64, 64);
+    background-color: rgb(172, 172, 172);
     color: white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    
 }
 
 .imagem{
-    background-color: rgb(245, 80, 80);
+    background-color: rgb(44, 43, 43);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521) ;
+    background-attachment: fixed;
+    border-radius: 10px;margin-bottom: 5px;
 
     
 }
 
 section.imagem > p{
-    background-color: rgba(243, 173, 173, 0.384);
+    background-color: rgba(240, 213, 213, 0.349);
     width: 400px;
     display: inline-block;
     padding: 5px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px;
+    text-shadow: 1px 1px 2px;
+
+}
+
+#img01{
+
+    background-image: url(imagens/vegetacao2.jpg);
+    background-size: cover;
+}
+
+#img02{
+
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    
 
 }
 
@@ -96,6 +124,7 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 25px;
+    
   
 }
 
