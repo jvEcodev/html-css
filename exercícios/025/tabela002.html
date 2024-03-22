@@ -12,20 +12,32 @@
         table{
             width: 600px;
             border-collapse: collapse;
-            
-         }
-         thead, tfoot{
+            position: relative;
+
+
+        }
+        tfoot{
             border: 1px solid black;
             padding: 10px;
             background-color: gray;
             color: white;
+            
 
+         }
+
+         thead{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: gray;
+            color: white;
+            
          }
 
          td{
             border: 1px solid black;
             padding: 10px;
             text-align: center;
+            text-decoration: none;
          }
 
          .numero{
@@ -48,12 +60,28 @@
 
          }
 
+         tr:nth-child(even){
+            background-color: lightgray;
+            font-weight: bold;
+         }
+
+         thead > tr > th{    /*Este efeito nao funciona em todos os navegadores*/
+            position:sticky ;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: gray;
+            color: white;
+            top: -1px;
+         }
+
+         
+
          
     </style>
 
 </head>
 <body>
-    <h1>Uso de Tabelas complexas</h1>
+    <h1>Uso de Tabelas complexas</h1> 
     <table>
         <caption>
             População das Unidades Federativas brasileiras
@@ -75,7 +103,7 @@
         <tbody>
             <tr>
                 <td>
-                    São Paulo
+                    <abbr title="Estado mais populoso">São Paulo</abbr>
                 </td>
                 <td class="numero">
                     44 411 238	
@@ -84,7 +112,7 @@
 
             <tr>
                 <td>
-                    Minas Gerais
+                    <abbr title="Estado com maior numero de cidades">Minas Gerais</abbr>
                 </td>
 
                 <td class="numero">
@@ -94,13 +122,105 @@
 
             <tr>
                 <td>
-                    Rio de Janeiro
+                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
                 </td>
                 <td class="numero">
                     16 054 524
                 </td>
 
             </tr>
+
+            <tr>
+                <td>
+                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                </td>
+                <td class="numero">
+                    16 054 524
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                </td>
+                <td class="numero">
+                    16 054 524
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                </td>
+                <td class="numero">
+                    16 054 524
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                </td>
+                <td class="numero">
+                    16 054 524
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                </td>
+                <td class="numero">
+                    16 054 524
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                </td>
+                <td class="numero">
+                    16 054 524
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                </td>
+                <td class="numero">
+                    16 054 524
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                </td>
+                <td class="numero">
+                    16 054 524
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                </td>
+                <td class="numero">
+                    16 054 524
+                </td>
+
+            </tr>
+
+            
 
             
         </tbody>
@@ -118,6 +238,13 @@
         </tfoot>
 
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dignissimos quod repellat eligendi. Ratione nobis consequatur facere nisi accusantium sint eius? Explicabo veritatis rem atque esse accusamus libero nesciunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo atque eligendi reprehenderit suscipit modi neque libero, culpa doloremque aliquid eos? Ratione rerum iure corporis autem nisi cupiditate sit dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi maxime ab quaerat dolorem architecto error quos explicabo voluptatum excepturi! Est reprehenderit quaerat molestias quibusdam eum harum nulla minus odio quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum architecto culpa a inventore iusto tenetur autem perspiciatis dolores sit provident dolorem maxime nobis necessitatibus, impedit nam distinctio asperiores aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore veritatis laborum quisquam tempore dolorum. Reprehenderit nam consequatur numquam ex laboriosam amet voluptatem. Quis quod porro sapiente quisquam doloremque pariatur at!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dignissimos quod repellat eligendi. Ratione nobis consequatur facere nisi accusantium sint eius? Explicabo veritatis rem atque esse accusamus libero nesciunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo atque eligendi reprehenderit suscipit modi neque libero, culpa doloremque aliquid eos? Ratione rerum iure corporis autem nisi cupiditate sit dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi maxime ab quaerat dolorem architecto error quos explicabo voluptatum excepturi! Est reprehenderit quaerat molestias quibusdam eum harum nulla minus odio quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum architecto culpa a inventore iusto tenetur autem perspiciatis dolores sit provident dolorem maxime nobis necessitatibus, impedit nam distinctio asperiores aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore veritatis laborum quisquam tempore dolorum. Reprehenderit nam consequatur numquam ex laboriosam amet voluptatem. Quis quod porro sapiente quisquam doloremque pariatur at!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dignissimos quod repellat eligendi. Ratione nobis consequatur facere nisi accusantium sint eius? Explicabo veritatis rem atque esse accusamus libero nesciunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo atque eligendi reprehenderit suscipit modi neque libero, culpa doloremque aliquid eos? Ratione rerum iure corporis autem nisi cupiditate sit dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi maxime ab quaerat dolorem architecto error quos explicabo voluptatum excepturi! Est reprehenderit quaerat molestias quibusdam eum harum nulla minus odio quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum architecto culpa a inventore iusto tenetur autem perspiciatis dolores sit provident dolorem maxime nobis necessitatibus, impedit nam distinctio asperiores aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore veritatis laborum quisquam tempore dolorum. Reprehenderit nam consequatur numquam ex laboriosam amet voluptatem. Quis quod porro sapiente quisquam doloremque pariatur at!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dignissimos quod repellat eligendi. Ratione nobis consequatur facere nisi accusantium sint eius? Explicabo veritatis rem atque esse accusamus libero nesciunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo atque eligendi reprehenderit suscipit modi neque libero, culpa doloremque aliquid eos? Ratione rerum iure corporis autem nisi cupiditate sit dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi maxime ab quaerat dolorem architecto error quos explicabo voluptatum excepturi! Est reprehenderit quaerat molestias quibusdam eum harum nulla minus odio quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum architecto culpa a inventore iusto tenetur autem perspiciatis dolores sit provident dolorem maxime nobis necessitatibus, impedit nam distinctio asperiores aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore veritatis laborum quisquam tempore dolorum. Reprehenderit nam consequatur numquam ex laboriosam amet voluptatem. Quis quod porro sapiente quisquam doloremque pariatur at!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dignissimos quod repellat eligendi. Ratione nobis consequatur facere nisi accusantium sint eius? Explicabo veritatis rem atque esse accusamus libero nesciunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo atque eligendi reprehenderit suscipit modi neque libero, culpa doloremque aliquid eos? Ratione rerum iure corporis autem nisi cupiditate sit dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi maxime ab quaerat dolorem architecto error quos explicabo voluptatum excepturi! Est reprehenderit quaerat molestias quibusdam eum harum nulla minus odio quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum architecto culpa a inventore iusto tenetur autem perspiciatis dolores sit provident dolorem maxime nobis necessitatibus, impedit nam distinctio asperiores aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore veritatis laborum quisquam tempore dolorum. Reprehenderit nam consequatur numquam ex laboriosam amet voluptatem. Quis quod porro sapiente quisquam doloremque pariatur at!</p>
+
 
     
 </body>
