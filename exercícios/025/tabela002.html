@@ -7,10 +7,11 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            
         }
 
         table{
-            width: 600px;
+            width: 450px;
             border-collapse: collapse;
             position: relative;
 
@@ -18,7 +19,7 @@
         }
         tfoot{
             border: 1px solid black;
-            padding: 10px;
+            padding: 5px;
             background-color: gray;
             color: white;
             
@@ -27,7 +28,7 @@
 
          thead{
             border: 1px solid black;
-            padding: 10px;
+            padding: 5px;
             background-color: gray;
             color: white;
             
@@ -35,7 +36,7 @@
 
          td{
             border: 1px solid black;
-            padding: 10px;
+            padding: 5px;
             text-align: center;
             text-decoration: none;
          }
@@ -47,8 +48,8 @@
          caption{
             border: 1px solid black;
             background-color: lightgray;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             font-size: 25px;
             font-weight: bolder;
             font-variant: small-caps;
@@ -68,10 +69,15 @@
          thead > tr > th{    /*Este efeito nao funciona em todos os navegadores*/
             position:sticky ;
             border: 1px solid black;
-            padding: 10px;
+            padding: 5px;
             background-color: gray;
             color: white;
             top: -1px;
+         }
+
+         #conteiner{
+            overflow-y: auto;
+            height: 70vw;
          }
 
          
@@ -81,169 +87,138 @@
 
 </head>
 <body>
+    
     <h1>Uso de Tabelas complexas</h1> 
-    <table>
-        <caption>
-            População das Unidades Federativas brasileiras
-        </caption>
-        <thead>
-            
-            <tr>
-                <th>
-                    Unidade federativa
-                </th>
-                <th style="width: 150px;">
-                    Poupulação
-                </th>
+    <div id="conteiner">
+        <table>
+            <caption>
+                População das Unidades Federativas brasileiras
+            </caption>
+            <thead>
+        
+                <tr>
+                    <th>
+                        Unidade federativa
+                    </th>
+                    <th style="width: 150px;">
+                        Poupulação
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <abbr title="Estado mais populoso">São Paulo</abbr>
+                    </td>
+                    <td class="numero">
+                        44 411 238
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="Estado com maior numero de cidades">Minas Gerais</abbr>
+                    </td>
+                    <td class="numero">
+                        20 538 718
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                    </td>
+                    <td class="numero">
+                        16 054 524
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                    </td>
+                    <td class="numero">
+                        16 054 524
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                    </td>
+                    <td class="numero">
+                        16 054 524
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                    </td>
+                    <td class="numero">
+                        16 054 524
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                    </td>
+                    <td class="numero">
+                        16 054 524
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                    </td>
+                    <td class="numero">
+                        16 054 524
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                    </td>
+                    <td class="numero">
+                        16 054 524
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                    </td>
+                    <td class="numero">
+                        16 054 524
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                    </td>
+                    <td class="numero">
+                        16 054 524
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
+                    </td>
+                    <td class="numero">
+                        16 054 524
+                    </td>
+                </tr>
+        
+        
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>
+                        População Totalizada
+                    </th>
+                    <td>
+                        number
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 
-            </tr>
-
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>
-                    <abbr title="Estado mais populoso">São Paulo</abbr>
-                </td>
-                <td class="numero">
-                    44 411 238	
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <abbr title="Estado com maior numero de cidades">Minas Gerais</abbr>
-                </td>
-
-                <td class="numero">
-                    20 538 718	
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
-                </td>
-                <td class="numero">
-                    16 054 524
-                </td>
-
-            </tr>
-
-            <tr>
-                <td>
-                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
-                </td>
-                <td class="numero">
-                    16 054 524
-                </td>
-
-            </tr>
-
-            <tr>
-                <td>
-                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
-                </td>
-                <td class="numero">
-                    16 054 524
-                </td>
-
-            </tr>
-
-            <tr>
-                <td>
-                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
-                </td>
-                <td class="numero">
-                    16 054 524
-                </td>
-
-            </tr>
-
-            <tr>
-                <td>
-                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
-                </td>
-                <td class="numero">
-                    16 054 524
-                </td>
-
-            </tr>
-
-            <tr>
-                <td>
-                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
-                </td>
-                <td class="numero">
-                    16 054 524
-                </td>
-
-            </tr>
-
-            <tr>
-                <td>
-                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
-                </td>
-                <td class="numero">
-                    16 054 524
-                </td>
-
-            </tr>
-
-            <tr>
-                <td>
-                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
-                </td>
-                <td class="numero">
-                    16 054 524
-                </td>
-
-            </tr>
-
-            <tr>
-                <td>
-                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
-                </td>
-                <td class="numero">
-                    16 054 524
-                </td>
-
-            </tr>
-
-            <tr>
-                <td>
-                    <abbr title="Estado com o maior numero de turistas ">Rio de Janeiro</abbr>
-                </td>
-                <td class="numero">
-                    16 054 524
-                </td>
-
-            </tr>
-
-            
-
-            
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <th>
-                    População Totalizada
-                </th>
-                <td>
-                    number
-                </td>
-            </tr>
-
-        </tfoot>
-
-    </table>
-
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dignissimos quod repellat eligendi. Ratione nobis consequatur facere nisi accusantium sint eius? Explicabo veritatis rem atque esse accusamus libero nesciunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo atque eligendi reprehenderit suscipit modi neque libero, culpa doloremque aliquid eos? Ratione rerum iure corporis autem nisi cupiditate sit dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi maxime ab quaerat dolorem architecto error quos explicabo voluptatum excepturi! Est reprehenderit quaerat molestias quibusdam eum harum nulla minus odio quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum architecto culpa a inventore iusto tenetur autem perspiciatis dolores sit provident dolorem maxime nobis necessitatibus, impedit nam distinctio asperiores aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore veritatis laborum quisquam tempore dolorum. Reprehenderit nam consequatur numquam ex laboriosam amet voluptatem. Quis quod porro sapiente quisquam doloremque pariatur at!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dignissimos quod repellat eligendi. Ratione nobis consequatur facere nisi accusantium sint eius? Explicabo veritatis rem atque esse accusamus libero nesciunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo atque eligendi reprehenderit suscipit modi neque libero, culpa doloremque aliquid eos? Ratione rerum iure corporis autem nisi cupiditate sit dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi maxime ab quaerat dolorem architecto error quos explicabo voluptatum excepturi! Est reprehenderit quaerat molestias quibusdam eum harum nulla minus odio quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum architecto culpa a inventore iusto tenetur autem perspiciatis dolores sit provident dolorem maxime nobis necessitatibus, impedit nam distinctio asperiores aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore veritatis laborum quisquam tempore dolorum. Reprehenderit nam consequatur numquam ex laboriosam amet voluptatem. Quis quod porro sapiente quisquam doloremque pariatur at!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dignissimos quod repellat eligendi. Ratione nobis consequatur facere nisi accusantium sint eius? Explicabo veritatis rem atque esse accusamus libero nesciunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo atque eligendi reprehenderit suscipit modi neque libero, culpa doloremque aliquid eos? Ratione rerum iure corporis autem nisi cupiditate sit dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi maxime ab quaerat dolorem architecto error quos explicabo voluptatum excepturi! Est reprehenderit quaerat molestias quibusdam eum harum nulla minus odio quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum architecto culpa a inventore iusto tenetur autem perspiciatis dolores sit provident dolorem maxime nobis necessitatibus, impedit nam distinctio asperiores aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore veritatis laborum quisquam tempore dolorum. Reprehenderit nam consequatur numquam ex laboriosam amet voluptatem. Quis quod porro sapiente quisquam doloremque pariatur at!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dignissimos quod repellat eligendi. Ratione nobis consequatur facere nisi accusantium sint eius? Explicabo veritatis rem atque esse accusamus libero nesciunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo atque eligendi reprehenderit suscipit modi neque libero, culpa doloremque aliquid eos? Ratione rerum iure corporis autem nisi cupiditate sit dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi maxime ab quaerat dolorem architecto error quos explicabo voluptatum excepturi! Est reprehenderit quaerat molestias quibusdam eum harum nulla minus odio quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum architecto culpa a inventore iusto tenetur autem perspiciatis dolores sit provident dolorem maxime nobis necessitatibus, impedit nam distinctio asperiores aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore veritatis laborum quisquam tempore dolorum. Reprehenderit nam consequatur numquam ex laboriosam amet voluptatem. Quis quod porro sapiente quisquam doloremque pariatur at!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dignissimos quod repellat eligendi. Ratione nobis consequatur facere nisi accusantium sint eius? Explicabo veritatis rem atque esse accusamus libero nesciunt at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo atque eligendi reprehenderit suscipit modi neque libero, culpa doloremque aliquid eos? Ratione rerum iure corporis autem nisi cupiditate sit dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi maxime ab quaerat dolorem architecto error quos explicabo voluptatum excepturi! Est reprehenderit quaerat molestias quibusdam eum harum nulla minus odio quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum architecto culpa a inventore iusto tenetur autem perspiciatis dolores sit provident dolorem maxime nobis necessitatibus, impedit nam distinctio asperiores aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore veritatis laborum quisquam tempore dolorum. Reprehenderit nam consequatur numquam ex laboriosam amet voluptatem. Quis quod porro sapiente quisquam doloremque pariatur at!</p>
+    
 
 
     
