@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiência Criativa</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            border: 2px solid black;
+            border-bottom: 0px;
+            background-color: rgb(116, 240, 223);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 25px;
+            font-weight: bolder;
+            font-variant: small-caps;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        table{
+            width: 450px;
+            border-collapse: collapse;
+            position: relative;
+            margin: auto;
+            
+        }
+       
+         
+        
+         thead{
+            border: 1px solid black;
+            padding: 5px;
+            
+            color: rgb(255, 255, 255);
+            
+         }
+         thead > tr > th{    /*Este efeito nao funciona em todos os navegadores*/
+            position:sticky ;
+            border: 2px solid black;
+            padding: 5px;
+            background-color: gray;
+            color: white;
+            top: -1px;
+         }
+        
+
+         td{
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            
+         }
+    </style>
+</head>
+<body>
+    <table>
+        <caption> TO-DO LIST</caption>
+        <thead>
+            <tr>
+                <th> </th>
+                <th colspan="2"> HORÁRIO</th>
+                <th>TAREFA</th>
+            
+
+            </tr>
+        
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" ></td>
+                <td>9:00 </td>
+                <td>10:00</td>
+                <td>Estudar HTML</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" ></td>
+                <td>11:00</td>
+                <td>12:00</td>
+                <td>Fazer atividade</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" ></td>
+                <td>12:00 </td>
+                <td>13:00</td>
+                <td>Lavar a Louça</td>
+
+            </tr>
+            <tr>
+                <td><input type="checkbox" ></td>
+                <td>16:00 </td>
+                <td>15:00</td>
+                <td>Arrumar o quarto</td>
+            </tr>
+            <tr><td><input type="checkbox" ></td>
+                <td>18:15 </td>
+                <td>23:00</td>
+                <td>Faculdade</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    
+</body>
+</html>
