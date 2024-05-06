@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form em html </title>
+</head>
+<body>
+    <!--Value = Valor pré-definido-->
+    <form method="post" autocomplete="on" action="cadastro.pynthon">
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" placeholder="nome usu" autocomplete="name" required minlength="12" maxlength="24">
+
+            <label for="isobre"> Sobrenome</label>
+            <input type="text" name="sobrenome" id="isobre"  placeholder="sobrenome" required minlength="12" maxlength="24">
+        </p>
+        <p>
+            <label for="imedia"> Media</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1"  required>
+        </p>
+        <p>
+            <label for="mes"> periodo letivo</label>
+            <input type="month" id="mes">
+        </p>
+        <p>
+            <label for="dia"> Dia da prova</label>
+            <input type="date" id="dia"> <!--Tudo com script-->
+        </p>
+        <p>
+            <label for="hora"> horario da prova</label>
+            <input type="time" id="hora">
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+
+        </p>
+       
+
+    </form>
+
+</body>
+</html>
