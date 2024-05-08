@@ -40,6 +40,40 @@
        
 
     </form>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="email" >E-mail</label>
+                <input type="email" autocomplete="email" id="email" placeholder="email" required>
+                <hr>
+
+                <label for="tel"> Telefone</label>
+                <input type="tel" autocomplete="tel" required placeholder="(xx)xxxx-xxxx" pattern="^ \(\d{2}\)\d{4}-\d{4}$">
+                
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Sexo</legend>
+        
+            
+            <input type="radio" name="Sexo" id="sexmas" required>
+            <label for="sexmas">Masculino</label>
+            <br>
+            
+            <input type="radio" name="Sexo" id="sexfem" required>
+            <label for="sexfem"> Feminino</label>
+            
+            
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+
+        </p>
+    </form>
 
 </body>
 </html>
