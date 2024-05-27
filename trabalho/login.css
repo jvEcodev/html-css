@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --font-pop: 'Poppins', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-pop);
+
+}
+
+body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    background: url(Site\ para\ Link\ na\ Bio\ Tecnologia\ e\ Jogos\ Escuro\ Simples\ Azul-escuro.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    text-shadow: 1px 1px 35px rgba(0, 0, 0, 0.767);
+}
+.conteudo{
+    display: flex;
+    margin-left: 4px;
+    flex-direction: column;
+    width: 350px;
+    height: 390px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.container {
+    color: rgb(0, 0, 0);
+    background: rgba(226, 224, 224, 0.863);
+    display: flex;
+    justify-content: center;
+    
+    width: 700px;
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    flex-direction: row;
+    box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.338);
+}
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        width: 400px;
+        padding: 10px;
+    }
+   .certificadoslateral{
+    border-radius: 200px;
+
+   }
+    
+}
+.certificadoslateral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    
+    padding: 20px;
+    border-top-left-radius:200px ;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px ;
+    margin: 0px;
+    background-color: blueviolet;
+    
+}
+.container > h1 {
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.725);
+    font-size: 25px;
+    
+    
+    
+}
+
+
+input[type="email"] {
+    width: 320px;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.349);
+    background-color: rgba(255, 255, 255, 0.219);
+    margin-bottom: 20px;
+    padding: 5px;
+    
+}
+
+input[type="password"] {
+    width: 320px;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.349);
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.219);
+    margin-bottom: 20px;
+    padding: 5px;
+
+}
+
+input [type="text"] {
+    width: 320px;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.349);
+    padding: 5px;
+    margin-bottom: 20px;
+    
+}
+
+input[type="text"] {
+    width: 320px;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.349);
+    background-color: rgba(255, 255, 255, 0.219);
+    margin-bottom: 20px;
+    padding: 5px;
+   
+}
+
+input[type="tel"] {
+    width: 320px;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.349);
+    background-color: rgba(255, 255, 255, 0.219);
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+input[type="file"] {
+    height: 20px;
+    
+    display: none;    
+}
+input:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.767);
+    scale: 1.03;
+}
+
+.certificadoslateral > label{
+    background-color: lightgrey;
+    width: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+    
+}
+.certificadoslateral > label:hover{
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+    transition-duration: .2s;
+}
+.envio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 110px;
+    margin-top: 20px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+}
+.envio:hover{
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    
+}
+
