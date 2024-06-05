@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/paginaInicial.css">
+    <link rel="stylesheet" href="../estilos/rPaginaInicial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Inicio</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="up_side">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="">Menu</a>
+                    <a href="../paginas/paginaInicial.html#sobre-nos">Sobre-nós</a>
+                    <a href="../paginas/paginaInicial.html#servicos">Serviços</a>
+                    <a href="../paginas/agendarHorario.html">Agendar</a>
+                    <a href="../paginas/paginaOrcamento1.html">Orçamento</a>
+                    <a href="../paginas/paginaAvaliacao.HTML">Avaliar</a>
+                    <a href="../paginas/registroProblema.html">Registrar Problema</a>
+                    <a href="../paginas/paginacancelarServico.HTML">Cancelar</a>
+                </div>
+                <button id ="botao_emergencia" onclick="ligarPolicia()">Emergencia</button>
+                <div id="menu">
+                </div>
+            </div>
+            <div class="logo_slogan">
+                <div class="logo">
+                    <a href="paginaInicial.html">
+                        <h1>PUC HELPER</h1>
+                    </a>
+                </div>
+                <div class="slogan">
+                    <h3>Traga seus problemas eletrônicos</h3>
+                </div>
+            </div>
+            <div class="user">
+                <a href="../paginas/PaginaLogin.html"><button class="btn_login">Login</button></a>
+                <div id="login_cadastro">
+                    <button onclick="toggleMenu()">Cadastro</button>
+                    <ul id="menuItems" style="display: none;">
+                        <li><a href="../paginas/paginaCadastroCliente.html">Usuario</a></li>
+                        <li><a href="../paginas/paginaCadastroProfissional.html">Profissional</a></li>
+                    </ul>
+                </div>
+                <a href=""><img src="/imagens/icones/user.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="item" id="item">
+            <div class="image-container">
+                <div class="image-slider">
+                    <div class="imgslider">
+                        <img id="imagem-1" src="../imagens/mulher-jovem-e-bonita-no-escritorio-em-casa-trabalhando-em-casa-conceito-de-teletrabalho.xcf" alt="Image 1" id= "imagem-1" >
+                    </div>
+                    <div class="imgslider">
+                    <img id="imagem-2" src="../imagens/icones/template_1440x570.svg" alt="Image 2" id="imagem-2" >
+                    </div> 
+                    <div class="imgslider">
+                    <img id="imagem-3" src="../imagens/icones/template_1440x570.svg" alt="Image 3" id="imagem-3" >
+                    </div>
+                    <div class="signifier">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+                <button  type ="button" class="arrow-button right-arrow" onclick="plusSlides(1)">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button type ="button" class="arrow-button left-arrow" onclick="plusSlides(-1)">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </section>
+        <section class="sobre-nos" id="sobre-nos">
+            <h2 class="titulo">Sobre nós</h2>
+            <div class="conteudo-sobre-nos">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eaque deleniti laborum esse nemo, doloribus dolore exercitationem quae dolores saepe. Consequatur nesciunt voluptate quos dolorum numquam doloribus eius reiciendis delectus?</p>
+                </div>
+                <aside>
+                    <img src="/imagens/img grupo cortado.jpg" alt="Image 1">
+                </aside>
+            </div>
+        </section>
+        <section class="servicos" id="servicos">
+            <h2 class="titulo">Nossos serviços</h2>
+            <div class="conteudo-servicos">
+                <div class="trabalho">
+                    <a href="/paginas/registroProblema.html">
+                        <div class="item-servicos">
+                            <img src="../imagens/icones/monitor.svg" alt="">
+                            <h4>Dispositivos</h4>
+                        </div>
+                    </a>
+                    <a href="/paginas/registroProblema.html">
+                        <div class="item-servicos">
+                            <img src="../imagens/icones/mouse.svg" alt="">
+                            <h4>Perifericos</h4>
+                        </div>
+                    </a>
+                    <a href="/paginas/registroProblema.html">
+                        <div class="item-servicos">
+                            <img src="../imagens/icones/cabo.svg" alt="">
+                            <h4>Eletrônicos</h4>
+                        </div>
+                    </a>
+                    <a href="/paginas/registroProblema.html">
+                        <div class="item-servicos">
+                            <img src="../imagens/icones/codigo-de-exibicao.png" alt="">
+                            <h4>Software</h4>
+                        </div>
+                    </a>
+                    <a href="/paginas/registroProblema.html">
+                        <div class="item-servicos">
+                            <img src="../imagens/icones/cpu.png" alt="">
+                            <h4>Hardwares</h4>
+                        </div>
+                    </a>
+                    <a href="/paginas/registroProblema.html">
+                        <div class="item-servicos">
+                            <img src="../imagens/icones/imprimir.png" alt="">
+                            <h4>Armazenamento</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../javascript/JavaScript_pi.js"></script>
+</body>
+</html> 

@@ -1,58 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="login.css">
-   
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
     <div class="container">
-       
+      <form action="./button.html" class="conteudo" id="form">
+        <h1>Pré-cadastro Profissional</h1>
+        <div class="input-field">
+          <div class="nome">
+            <input
+              style="margin-top: 30px"
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Nome Completo:"
+              
+              
+            />
+            <span class="span-required"
+              >Nome deve ter no mínimo três caracteres</span
+            >
+          </div>
+          <div class="cpf">
+            <input
+              type="text"
+              name="cpf"
+              id="cpf"
+              placeholder="CPF:"
+              
+            />
+            <span class="span-required"> No mínimo 11 numeros para êxito</span>
+          </div>
+          <div class="celular">
+            <input
+              type="tel"
+              name="celular"
+              id="celular"
+              placeholder="(xx)xxxxx-xxxx"
+           
+            />
+            <span class="span-required">Número invalido</span>
+          </div>
+          <div class="user">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail:"
+              
+            />
+            <span class="span-required">E-mail invalido</span>
+          </div>
+          <div class="password">
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Senha:"
         
-        <form action="./button.html" class="conteudo" >
-            <h1>Pré-cadastro  Profissional</h1>
-            <div class="input-field">
-                <div class="nome">
-                    
-                    <input style="margin-top: 30px;" type="text" name="nome" id="nome" placeholder="Nome Completo:">
-                </div>
-                <div class="cpf">
-                    
-                    <input type="text" name="cpf" id="cpf" placeholder="CPF:" required>
-                </div>
-                <div class="celular">
-                    
-                    <input type="tel" name="celular" id="celular" placeholder="Número:" required>
-                </div>
-                <div class="user">
-                    
-                    <input type="email" name="email" id="email" placeholder="E-mail:" required>
-                </div>
-                <div class="password">
-                    
-                    <input type="password" name="senha" id="senha" placeholder="Senha:">
-                </div>
-                <div >
-                    <label  class="envio"for="envio" >Enviar</label>
-                    <button type="submit" class="btn" id="envio"></button>
-
-                </div>
-               
-            </div>
+            />
+            <span class="span-required">Obrigatório preencher esse campo</span>
+          </div>
+          <div>
+            <label class="envio" for="envio">Enviar</label>
+            <button type="submit" class="btn" id="envio"></button>
             
-        </form>
-        <main class="certificadoslateral">
-            <h1 style="color: white;" >PU<img style="transform: rotate(270deg);" src="Captura de tela 2024-05-23 185943.png" alt=""> HELPER</h1>
-            <label for="browse" >  <p class="bi bi-cloud-arrow-up-fill"> Upload</p></label>
-            <input id="browse" type="file" >
-            
-
-            
-        </main>
-        
+          </div>
+        </div>
+      </form>
+      <main class="certificadoslateral">
+        <h1 style="color: white">
+          PU<img
+            style="transform: rotate(270deg)"
+            src="Captura de tela 2024-05-23 185943.png"
+            alt=""
+          />
+          HELPER
+        </h1>
+        <label for="browse">
+          <p class="bi bi-cloud-arrow-up-fill">Upload</p></label
+        >
+        <input id="browse" type="file" />
+      </main>
     </div>
-</body>
+    <script>
+        const form = document.querySelector("#form");
+        const nameValidate = document.querySelector("#nome");
+        const cpfValidate = document.querySelector("#cpf");
+        const celularValidate = document.querySelector("#celular");
+        const emailValidate = querySelector("#email");
+        const senhaValidate = document.querySelector("#senha");
+
+        form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        if (nameValidate.value === "") {
+            alert("Por favor, preencha o seu nome");
+            return;
+        }
+
+
+        if (emailValidate.value === "" || !isEmailValid(emailInput.value)) {
+            alert("Por favor, preencha o seu e-mail");
+            return;
+        }
+
+        if (!senha(senhaValidate.value, 8)) {
+            alert("A senha precisa ser ao menos 8 dígitos.");
+            return;
+        }
+
+        if (cpfValidate.value === "") {
+            alert("Por favor, preencha o seu CPF");
+            console.log('Insira pelo menos 11 números')
+            return;
+        }
+
+        if (celularValidate.value === "") {
+            alert("Por favor, escreva uma mensagem");
+            return;
+        }
+
+        form.submit();
+        });
+
+        function isEmailValid(email) {
+        const rgx = new RegExp(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-z]/);
+
+        return rgx.test(email);
+        }
+
+        function senha(senha, minDigits) {
+        return senha.length >= minDigits;
+        }
+    </script>
+  </body>
 </html>

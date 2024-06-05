@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Profissional</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../estilos/paginaCadastroProfissional.css">
+</head>
+<body>
+    <form action="" class="conteudo" >
+        <div class="container">
+            <div class="form">
+                <div class="left-side">
+                    <h1>Cadastro  Profissional</h1>
+                    <div class="input-field">
+                        <div class="nome">
+                            <input style="margin-top: 30px;" type="text" name="nome" id="nome" placeholder="Nome Completo:"   />
+                        </div>
+                        <div class="cpf">
+                            <input type="text" name="cpf" id="cpf" placeholder="CPF:"  
+                            /> 
+                        </div>
+                        <div class="celular">
+                            <input type="tel" name="celular" id="celular" placeholder="Número:" />
+                        </div>
+                        <div class="user">
+                            <input type="email" name="email" id="email" placeholder="E-mail:" >
+                        </div>
+                        <div class="password">
+                            <input type="password" name="senha" id="senha" placeholder="Senha:" >
+                        </div>
+                        <div class="password_confirm">
+                            <input type="password" name="confirm_senha" id="confirm_senha" placeholder="Confirmar senha:" >
+                        </div>
+                    </div>
+                </div>
+                <main class="certificadoslateral">
+                    <h2 style="color: white;" >PU<img style="transform: rotate(270deg);" src="../imagens/icones/c.puchelper.png" alt=""> HELPER</h2>
+                    <label for="browse" >  <p class="bi bi-cloud-arrow-up-fill"> Upload</p></label>
+                    <input id="browse" type="file" >
+                </main>
+            </div>
+                <a href="/paginas/paginaInicial.html"><button type="submit" class="btn" id="envio">Cadastar-se</button></a>
+        </div>
+    </form>
+    <script >
+    const nome = document.getElementById('nome')
+    const cpf = document.getElementById('cpf')
+    const celular = document.getElementById('celular')
+    const email = document.getElementById('email')
+    const senha = document.getElementById('senha')
+    const confirm_senha = document.getElementById('confirm_senha')
+    const envio = document.getElementById('envio')
+
+    envio.addEventListener('click', (e) => {
+        
+        if(nome.value == ""){
+            e.preventDefault()
+            alert('Preencha o campo nome')
+        }else if(cpf.value == ""){
+            e.preventDefault()
+            alert('Preencha o campo cpf')}
+            else if(emaiç.value == ""){
+                e.preventDefault()
+                alert('Preencha o campo email')}
+        else if(senha.value == ""){
+            e.preventDefault()
+            alert('Preencha o campo senha')}
+        else if(confirm_senha.value == ""){
+            e.preventDefault()
+            alert('Preencha o campo confirmar senha')}
+        else if(senha.value != confirm_senha.value){
+            e.preventDefault()
+            alert('As senhas não são iguais')
+        }else{
+            alert('Cadastro realizado com sucesso')
+        }
+    })
+
+
+    </script>
+    
+</body>
+</html>

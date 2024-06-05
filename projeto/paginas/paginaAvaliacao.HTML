@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Profissional</title>
+    <link rel="stylesheet" href="../estilos/paginaAvaliacao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="up_side">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="">Menu</a>
+                    <a href="../paginas/paginaInicial.html#sobre-nos">Sobre-nós</a>
+                    <a href="../paginas/paginaInicial.html#servicos">Serviços</a>
+                    <a href="../paginas/agendarHorario.html">Agendar</a>
+                    <a href="../paginas/paginaOrcamento1.html">Orçamento</a>
+                    <a href="../paginas/paginaAvaliacao.HTML">Avaliar</a>
+                    <a href="../paginas/registroProblema.html">Registrar Problema</a>
+                    <a href="../paginas/paginacancelarServico.HTML">Cancelar</a>
+                </div>
+                <button id ="botao_emergencia" onclick="ligarPolicia()">Emergencia</button>
+            </div>
+            <div class="logo_slogan">
+                <div class="logo">
+                    <a href="paginaInicial.html">
+                        <h1>PUC HELPER</h1>
+                    </a>
+                </div>
+                <div class="slogan">
+                    <h3>Traga seus problemas eletrônicos</h3>
+                </div>
+            </div>
+            <div class="user">
+                <<a href="../paginas/PaginaLogin.html"><button class="btn_login">Login</button></a>
+                <div id="login_cadastro">
+                    <button onclick="toggleMenu()">Cadastro</button>
+                    <ul id="menuItems" style="display: none;">
+                        <li><a href="../paginas/paginaCadastroCliente.html">Usuario</a></li>
+                        <li><a href="../paginas/paginaCadastroProfissional.html">Profissional</a></li>
+                    </ul>
+                </div>
+                <a href=""><img src="/imagens/icones/user.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="avaliacao" id="avaliacao">
+            <div class="avaliacao-header">
+                <a href="paginaInicial.html"><button><p>❮</p></button></a>
+                <h1>Avaliação</h1>
+            </div>
+            <div class="avaliacao-dados">
+                <div class="profissional-dados">
+                    <div>
+                        <img src="../imagens/icones/user.png" alt="">
+                    </div>
+                    <div class="dados">
+                        <h2>Profissional: ---------- </h2>
+                        <h2>Serviço: -------------- </h2>
+                        <h2>Protocolo: ------------</h2>
+                    </div>
+                </div>
+                <div class="aval_coment">
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" />
+                        <label for="star5" title="5 estrelas">★</label>
+                        <input type="radio" id="star4" name="rating" value="4" />
+                        <label for="star4" title="4 estrelas">★</label>
+                        <input type="radio" id="star3" name="rating" value="3" />
+                        <label for="star3" title="3 estrelas">★</label>
+                        <input type="radio" id="star2" name="rating" value="2" />
+                        <label for="star2" title="2 estrelas">★</label>
+                        <input type="radio" id="star1" name="rating" value="1" />
+                        <label for="star1" title="1 estrela">★ </label>
+                    </div>
+                    <div class="comentario">
+                        <h3>Comentário</h3>
+                        <textarea name="comentario" placeholder="Escreva seu comentário" style="resize: none;" id="coment" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="fast-coments">
+                        <h3>Selecione algum problema</h3>
+                        <div class="fast-coments-1">
+                            <input type="checkbox" name="coment" id="fast-coment-1">
+                            <label for="fast-coment-1">Serviço lendo</label>
+                            <input type="checkbox" name="coment" id="fast-coment-2">
+                            <label for="fast-coment-2">Serviço mal feito</label>
+                            <input type="checkbox" name="coment" id="fast-coment-3">
+                            <label for="fast-coment-3">Problema não resolvido</label>
+                        </div>
+                        <div class="fast-coments-2">
+                            <input type="checkbox" name="coment" id="fast-coment-5">
+                            <label for="fast-coment-5">Profissional rude</label>
+                            <input type="checkbox" name="coment" id="fast-coment-6">
+                            <label for="fast-coment-6">Comunicação ruim</label>
+                            <input type="checkbox" name="coment" id="fast-coment-7">
+                            <label for="fast-coment-7">Serviço incompleto</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submit">
+                <a href="">
+                    <button class="btn-submit" type="submit">
+                        Enviar
+                    </button>
+                </a>
+            </div>
+        </div>
+    <script src="/javascript/JavaScript_pa.js"></script>
+</body>
+</html>

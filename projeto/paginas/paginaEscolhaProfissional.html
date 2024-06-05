@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/paginaEscolhaProfissional.css">
+    <title>Profissional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="up_side">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="">Menu</a>
+                    <a href="../paginas/paginaInicial.html#sobre-nos">Sobre-nós</a>
+                    <a href="../paginas/paginaInicial.html#servicos">Serviços</a>
+                    <a href="../paginas/agendarHorario.html">Agendar</a>
+                    <a href="../paginas/paginaOrcamento1.html">Orçamento</a>
+                    <a href="../paginas/paginaAvaliacao.HTML">Avaliar</a>
+                    <a href="../paginas/registroProblema.html">Registrar Problema</a>
+                    <a href="../paginas/paginacancelarServico.HTML">Cancelar</a>
+                </div>
+                <button id ="botao_emergencia" onclick="ligarPolicia()">Emergencia</button>
+            </div>
+            <div class="logo_slogan">
+                <div class="logo">
+                    <a href="paginaInicial.html">
+                        <h1>PUC HELPER</h1>
+                    </a>
+                </div>
+                <div class="slogan">
+                    <h3>Traga seus problemas eletrônicos</h3>
+                </div>
+            </div>
+            <div class="user">
+                <a href="PaginaLogin.html"><button class="btn_login">Login</button></a>
+                <div id="login_cadastro">
+                    <button onclick="toggleMenu()">Cadastro</button>
+                    <ul id="menuItems" style="display: none;">
+                        <li><a href="../paginas/paginaCadastroCliente.html">Usuario</a></li>
+                        <li><a href="../paginas/paginaCadastroProfissional.html">Profissional</a></li>
+                    </ul>
+                </div>
+                <a href=""><img src="/imagens/icones/user.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Escolha um Profissional</h1>
+        <div class="fundo-profissional">
+            <div>
+                <div class="profissionais">
+                    <a href="agendarHorario.html">
+                        <div class="perfil">
+                            <img src="../imagens/icones/iconePerfil.png"/>
+                            <div class="informacao">
+                                <label>Nome</label>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem atque numquam magni ipsa veritatis, consequatur odit sapiente, dolorum quisquam quo qui in, eveniet natus nisi. Fugit, atque quidem? Impedit, cupiditate.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="agendarHorario.html">
+                        <div class="perfil">
+                            <img src="../imagens/icones/iconePerfil.png"/>
+                            <div class="informacao">
+                                <label>Nome</label>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem atque numquam magni ipsa veritatis, consequatur odit sapiente, dolorum quisquam quo qui in, eveniet natus nisi. Fugit, atque quidem? Impedit, cupiditate.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="agendarHorario.html">
+                        <div class="perfil">
+                            <img src="../imagens/icones/iconePerfil.png"/>
+                            <div class="informacao">
+                                <label>Nome</label>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem atque numquam magni ipsa veritatis, consequatur odit sapiente, dolorum quisquam quo qui in, eveniet natus nisi. Fugit, atque quidem? Impedit, cupiditate.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        function ligarPolicia() {
+            var numeroTelefone = "190";
+            
+            window.location.href = "tel:" + numeroTelefone;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cancelamento de Cerviço</title>
+    <link rel="stylesheet" href="../estilos/cancelarServico.css"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="up_side">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="">Menu</a>
+                    <a href="../paginas/paginaInicial.html#sobre-nos">Sobre-nós</a>
+                    <a href="../paginas/paginaInicial.html#servicos">Serviços</a>
+                    <a href="../paginas/agendarHorario.html">Agendar</a>
+                    <a href="../paginas/paginaOrcamento1.html">Orçamento</a>
+                    <a href="../paginas/paginaAvaliacao.HTML">Avaliar</a>
+                    <a href="../paginas/registroProblema.html">Registrar Problema</a>
+                    <a href="../paginas/paginacancelarServico.HTML">Cancelar</a>
+                </div>
+                <button id ="botao_emergencia" onclick="ligarPolicia()">Emergencia</button>
+                <div id="menu">
+                </div>
+            </div>
+            <div class="logo_slogan">
+                <div class="logo">
+                    <a href="paginaInicial.html">
+                        <h1>PUC HELPER</h1>
+                    </a>
+                </div>
+                <div class="slogan">
+                    <h3>Traga seus problemas eletrônicos</h3>
+                </div>
+            </div>
+            <div class="user">
+                <a href="../paginas/PaginaLogin.html"><button class="btn_login">Login</button></a>
+                <div id="login_cadastro">
+                    <button onclick="toggleMenu()">Cadastro</button>
+                    <ul id="menuItems" style="display: none;">
+                        <li><a href="../paginas/paginaCadastroCliente.html">Usuario</a></li>
+                        <li><a href="../paginas/paginaCadastroProfissional.html">Profissional</a></li>
+                    </ul>
+                </div>
+                <a href=""><img src="/imagens/icones/user.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="textocancelarServico">
+            <h1>cancelar servico</h1>
+
+            <div class="inputMotivo">
+                <label for="motivo" class="labelmotivo">Motivo do cancelamento:</label>
+                <textarea  name="motivo" class="motivo" id="motivo" placeholder="Digite o motivo do cancelamento"></textarea>
+            </div>
+            <button class="enviar" id="enviar">enviar</button>
+        </div>
+    </main>
+</body>
+
+
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+    function ligarPolicia() {
+        var numeroTelefone = "190";
+        
+        window.location.href = "tel:" + numeroTelefone;
+    }
+        
+        const botao_enviar = document.getElementById('enviar');
+        botao_enviar.addEventListener('click', function(){
+            const textarea = document.getElementById('motivo').value;
+            if (textarea == ""){
+            alert('O motivo do cancelamento não pode estar vazio!');
+            }
+            else{
+                alert('Serviço cancelado!');
+            };
+        });
+</script>
+
+</html>

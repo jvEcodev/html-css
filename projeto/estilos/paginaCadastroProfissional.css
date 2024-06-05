@@ -2,6 +2,7 @@
 :root{
     --font-pop: 'Poppins', sans-serif;
 }
+
 * {
     margin: 0px;
     padding: 0px;
@@ -16,49 +17,74 @@ body {
     align-items: center;
     box-sizing: border-box;
     height: 100vh;
-    background: url(Site\ para\ Link\ na\ Bio\ Tecnologia\ e\ Jogos\ Escuro\ Simples\ Azul-escuro.png) ;
+    background: url(../imagens/background.png) ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0px;
     padding: 0px;
 }
-h1{
-    text-shadow: 1px 1px 35px rgba(0, 0, 0, 0.767);
+
+form {
+    align-items: center;
+    justify-content: center;
 }
+
 .conteudo{
     display: flex;
     margin-left: 4px;
     flex-direction: column;
     width: 350px;
-    height: 390px;
+    height: 500px;
     border-radius: 10px;
     padding: 20px;
 
 }
 .container {
     color: rgb(0, 0, 0);
-    background: rgba(226, 224, 224, 0.863);
+    background: rgba(226, 224, 224, 0.945);
     display: flex;
-    justify-content: center;
-    
-    width: 700px;
-    border: 2px solid rgba(0, 0, 0, 0.04);
+    align-items: center;
+    justify-content: space-around;
+    width: 830px;
+    height: 500px;
     border-radius: 10px;
-    flex-direction: row;
     box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.338);
+    flex-direction: column;
+    border-bottom: 5px solid rgba(226, 224, 224, 0.945);
 }
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    width: 400px;
+}
+
 @media screen and (max-width: 700px) {
     .container {
         flex-direction: column;
         width: 400px;
         padding: 10px;
     }
-   .certificadoslateral{
+    .certificadoslateral{
     border-radius: 200px;
-
-   }
-    
+    }
 }
 .certificadoslateral{
     display: flex;
@@ -66,7 +92,7 @@ h1{
     align-items: center;
     justify-content: center;
     width: 350px;
-    
+    height: 403px;
     padding: 20px;
     border-top-left-radius:200px ;
     border-bottom-left-radius: 200px;
@@ -75,17 +101,6 @@ h1{
     margin: 0px;
     background-color: blueviolet;
     
-}
-.container > h1 {
-    font-weight: bolder;
-    color: rgba(0, 0, 0, 0.725);
-    font-size: 25px;
-    
-    
-    
-}
-.span-required{
-    display: none;
 }
 
 input[type="email"] {
@@ -133,7 +148,6 @@ input[type="text"] {
     background-color: rgba(255, 255, 255, 0.219);
     margin-bottom: 20px;
     padding: 5px;
-   
 }
 
 input[type="tel"] {
@@ -158,14 +172,16 @@ input:hover{
     scale: 1.03;
 }
 
+h2 {
+    font-size: 35px;
+}
+
 .certificadoslateral > label{
     background-color: lightgrey;
     width: 80px;
     padding: 20px;
     border-radius: 10px;
     margin-top: 10px;
-    
-    
 }
 .certificadoslateral > label:hover{
     background-color: rgba(0, 0, 0, 0.767);
@@ -173,26 +189,31 @@ input:hover{
     transition: all 0.3s ease-in-out;
 }
 
-input[type="submit"]:hover {
-    background-color: green;
-    transition-duration: .2s;
-}
-.envio{
+button[type="submit"]{
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 110px;
-    margin-top: 20px;
     border: none;
     background-color: blueviolet;
     color: white;
-    width: 100px;
-    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
 }
-.envio:hover{
-    background-color: rgba(0, 0, 0, 0.767);
+button[type="submit"]:hover{
+    background-color: rgb(111, 35, 181);
     color: white;
     transition: all 0.3s ease-in-out;
-    
+    transform: scale(1.1);
+}
+
+button[type="submit"]:active{
+    transform: scale(0.9);
+    transition: none;
+}
+
+a {
+    text-decoration: none;
 }
 

@@ -1,0 +1,43 @@
+body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    background: url(../imagens/background.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.botao {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    width: 30%;
+    height: 55%;
+
+}
+
+.botao button {
+    background-color: red; /* Verde */
+    color: white;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    width: 50%;
+    height: 50%;
+}

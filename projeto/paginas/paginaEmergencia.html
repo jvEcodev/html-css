@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão de Emergencia</title>
+    <link rel="stylesheet" href="../estilos/paginaEmergencia.css">
+</head>
+<body>
+    <div class="botao">
+        <button onclick="ligarPolicia()">Botão de Emergencia (190)</button>
+
+        <script>
+            function ligarPolicia() {
+                var numeroTelefone = "190";
+                
+                window.location.href = "tel:" + numeroTelefone;
+            }
+        </script>
+    </div>
+</body>
+</html>

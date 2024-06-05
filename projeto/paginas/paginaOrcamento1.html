@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link rel="stylesheet" href="../estilos/paginaOrcamento.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="/projetoPUCHELPER/favicon_io/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="up_side">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="">Menu</a>
+                    <a href="../paginas/paginaInicial.html#sobre-nos">Sobre-nós</a>
+                    <a href="../paginas/paginaInicial.html#servicos">Serviços</a>
+                    <a href="../paginas/agendarHorario.html">Agendar</a>
+                    <a href="../paginas/paginaOrcamento1.html">Orçamento</a>
+                    <a href="../paginas/paginaAvaliacao.HTML">Avaliar</a>
+                    <a href="../paginas/registroProblema.html">Registrar Problema</a>
+                    <a href="../paginas/paginacancelarServico.HTML">Cancelar</a>
+                </div>
+                <a href="paginaEmergencia.html"><button style="padding-left: 35%;" id ="botao_emergencia" onclick="ligarPolicia()">!</button></a>
+            </div>
+            <div class="logo_slogan">
+                <div class="logo">
+                    <a href="paginaInicial.html">
+                        <h1>PUC HELPER</h1>
+                    </a>
+                </div>
+                <div class="slogan">
+                    <h3>Traga seus problemas eletrônicos</h3>
+                </div>
+            </div>
+            <div class="user">
+                <a href="../paginas/PaginaLogin.html"><button class="btn_login">Login</button></a>
+                <div id="login_cadastro">
+                    <button onclick="toggleMenu()">Cadastro</button>
+                    <ul id="menuItems" style="display: none;">
+                        <li><a href="../paginas/paginaCadastroCliente.html">Usuario</a></li>
+                        <li><a href="../paginas/paginaCadastroProfissional.html">Profissional</a></li>
+                    </ul>
+                </div>
+                <a href=""><img src="/imagens/icones/user.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <div class="conteiner">
+        <fieldset class="conteudo">
+            <h1  class="bi bi-building-fill-gear" > Orçamento</h1>
+            <main class="orçamento">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selecionar</th>
+                            <th>Serviço</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                        </tr>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="item1"></td>
+                
+                            <td> locomoção</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt omnis iusto atque voluptates, alias repudiandae, sit recusandae cupiditate vel esse magni ullam molestias! Deserunt reiciendis dolorum odit, illum ad fuga?</td>
+                            <td class="number">R$150,00</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="item2"></td>
+                
+                            <td>Componentes </td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt omnis iusto atque voluptates, alias repudiandae, sit recusandae cupiditate vel esse magni ullam molestias! Deserunt reiciendis dolorum odit, illum ad fuga?</td>
+                            <td class="number">R$170,00</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="item3"></td>
+                
+                            <td>Serviço</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt omnis iusto atque voluptates, alias repudiandae, sit recusandae cupiditate vel esse magni ullam molestias! Deserunt reiciendis dolorum odit, illum ad fuga?</td>
+                            <td class="number">R$250,00</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="item3"></td>
+                
+                            <td>Desconto</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt omnis iusto atque voluptates, alias repudiandae, sit recusandae cupiditate vel esse magni ullam molestias! Deserunt reiciendis dolorum odit, illum ad fuga?</td>
+                            <td class="number">R$50,00</td>
+                        </tr>
+                
+                
+                
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>
+                               Valor Total
+                
+                            </th>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                R$520,00
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+            </main>
+            <div class="botao">
+                <a href="paginaPagamento.html"><button type="submit"> Confirmar </button></a>
+            
+            </div>
+        </fieldset>
+        
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+
+        function ligarPolicia() {
+            var numeroTelefone = "190";
+            
+            window.location.href = "tel:" + numeroTelefone;
+        }
+    </script>
+    
+</body>
+</html>

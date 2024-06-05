@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" type="text/css" href="../estilos/agendarHorario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="up_side">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="">Menu</a>
+                    <a href="../paginas/paginaInicial.html#sobre-nos">Sobre-nós</a>
+                    <a href="../paginas/paginaInicial.html#servicos">Serviços</a>
+                    <a href="../paginas/agendarHorario.html">Agendar</a>
+                    <a href="../paginas/paginaOrcamento1.html">Orçamento</a>
+                    <a href="../paginas/paginaAvaliacao.HTML">Avaliar</a>
+                    <a href="../paginas/registroProblema.html">Registrar Problema</a>
+                    <a href="../paginas/paginacancelarServico.HTML">Cancelar</a>
+                </div>
+                <button id ="botao_emergencia" onclick="ligarPolicia()">Emergencia</button>
+            </div>
+            <div class="logo_slogan">
+                <div class="logo">
+                    <a href="paginaInicial.html">
+                        <h1>PUC HELPER</h1>
+                    </a>
+                </div>
+                <div class="slogan">
+                    <h3>Traga seus problemas eletrônicos</h3>
+                </div>
+            </div>
+            <div class="user">
+                <a href="../paginas/PaginaLogin.html"><button class="btn_login">Login</button></a>
+                <div id="login_cadastro">
+                    <button onclick="toggleMenu()">Cadastro</button>
+                    <ul id="menuItems" style="display: none;">
+                        <li><a href="../paginas/paginaCadastroCliente.html">Usuario</a></li>
+                        <li><a href="../paginas/paginaCadastroProfissional.html">Profissional</a></li>
+                    </ul>
+                </div>
+                <a href=""><img src="/imagens/icones/user.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <h2>Agendamento</h2>
+        <div class="agendamento">
+            <div class="tabelaFull">
+                <aside class="profissional_dados">
+                    <img src="/imagens/icones/user.png" alt="">
+                    <h3>Profissional: ----------------- </h3>
+                    <h3>Serviço: -------------------- </h3>
+                    <h3>Descrição</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates harum ad impedit, eligendi ut blanditiis rem nam nostrum autem illo quasi ducimus asperiores maxime tempora nulla dolores amet laboriosam.</p>
+                </aside>
+                <div class="tabela">
+                    <h3>Junho</h3>
+                    <form aria-required="true">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Dom</th>
+                                    <th>Seg</th>
+                                    <th>Ter</th>
+                                    <th>Qua</th>
+                                    <th>Qui</th>
+                                    <th>Sex</th>
+                                    <th>Sab</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="radio" id="day_1" name="dia"><label for="day_1">1</label></input></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" id="day_2" name="dia"><label for="day_2">2</label></input></td>
+                                    <td><input type="radio" id="day_3" name="dia"><label for="day_3">3</label></input></td>
+                                    <td><input type="radio" id="day_4" name="dia"><label for="day_4">4</label></input></td>
+                                    <td><input type="radio" id="day_5" name="dia"><label for="day_5">5</label></input></td>
+                                    <td><input type="radio" id="day_6" name="dia"><label for="day_6">6</label></input></td>
+                                    <td><input type="radio" id="day_7" name="dia"><label for="day_7">7</label></input></td>
+                                    <td><input type="radio" id="day_8" name="dia"><label for="day_8">8</label></input></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" id="day_9" name="dia"><label for="day_9">9</label></input></td>
+                                    <td><input type="radio" id="day_10" name="dia"><label for="day_10">10</label></input></td>
+                                    <td><input type="radio" id="day_11" name="dia"><label for="day_11">11</label></input></td>
+                                    <td><input type="radio" id="day_12" name="dia"><label for="day_12">12</label></input></td>
+                                    <td><input type="radio" id="day_13" name="dia"><label for="day_13">13</label></input></td>
+                                    <td><input type="radio" id="day_14" name="dia"><label for="day_14">14</label></input></td>
+                                    <td><input type="radio" id="day_15" name="dia"><label for="day_15">15</label></input></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" id="day_16" name="dia"><label for="day_16">16</label></input></td>
+                                    <td><input type="radio" id="day_17" name="dia"><label for="day_17">17</label></input></td>
+                                    <td><input type="radio" id="day_18" name="dia"><label for="day_18">18</label></input></td>
+                                    <td><input type="radio" id="day_19" name="dia"><label for="day_19">19</label></input></td>
+                                    <td><input type="radio" id="day_20" name="dia"><label for="day_20">20</label></input></td>
+                                    <td><input type="radio" id="day_21" name="dia"><label for="day_21">21</label></input></td>
+                                    <td><input type="radio" id="day_22" name="dia"><label for="day_22">22</label></input></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" id="day_23" name="dia"><label for="day_23">23</label></input></td>
+                                    <td><input type="radio" id="day_24" name="dia"><label for="day_24">24</label></input></td>
+                                    <td><input type="radio" id="day_25" name="dia"><label for="day_25">25</label></input></td>
+                                    <td><input type="radio" id="day_26" name="dia"><label for="day_26">26</label></input></td>
+                                    <td><input type="radio" id="day_27" name="dia"><label for="day_27">27</label></input></td>
+                                    <td><input type="radio" id="day_28" name="dia"><label for="day_28">28</label></input></td>
+                                    <td><input type="radio" id="day_29" name="dia"><label for="day_29">29</label></input></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" id="day_30" name="dia"><label  for="day_30">30</label></input></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="horario">
+                    <h3>Horario</h3>
+                    <form aria-required="true">
+                        <div class="boxes">
+                            <input type="radio" name="hora" id="hora_1"> <label for="hora_1">09:00</label> </input>
+                            
+                            <input type="radio" name="hora" id="hora_2"> <label for="hora_2">09:30</label> </input>
+                            
+                            <input type="radio" name="hora" id="hora_3"> <label  for="hora_3">10:00</label> </input>
+                            
+                            <input type="radio" name="hora" id="hora_4"> <label for="hora_4">10:30</label> </input>
+                            
+                            <input type="radio" name="hora" id="hora_5"> <label for="hora_5">11:00</label> </input>
+                            
+                            <input type="radio" name="hora" id="hora_6"> <label for="hora_6">11:30</label> </input>
+
+                            <input type="radio" name="hora" id="hora_7"> <label for="hora_7">12:00</label> </input>
+                            
+                            <input type="radio" name="hora" id="hora_8"> <label for="hora_8">12:30</label> </input>
+                            
+                            <input type="radio" name="hora" id="hora_9"> <label for="hora_9">13:00</label> </input>
+                            
+                            <input type="radio" name="hora" id="hora_10"> <label for="hora_10">13:30</label> </input>
+                            
+                            <input type="radio" name="hora" id="hora_11"> <label for="hora_11">14:00</label> </input>
+                            
+                            <input type="radio" name="hora" id="hora_12"> <label for="hora_12">14:30</label> </input>
+                            
+                            <input type="radio" name="hora" id="hora_13"> <label for="hora_13">15:00</label> </input>
+                            
+                            <input type="radio" name="hora" id="hora_14"> <label for="hora_14">15:30</label> </input>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="../paginas/paginaOrcamento1.html"><button type="submit"> Confirmar </button></a> 
+        </div>
+    </main>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+
+        function ligarPolicia() {
+            var numeroTelefone = "190";
+            
+            window.location.href = "tel:" + numeroTelefone;
+        }
+    </script>
+</body>
+
+</html>
