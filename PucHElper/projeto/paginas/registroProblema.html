@@ -13,7 +13,7 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">&#9776;</button>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="">Menu</a>
+                    <a href="../paginas/paginaInicial.html#sobre-nos">Menu</a>
                     <a href="../paginas/paginaInicial.html#sobre-nos">Sobre-nós</a>
                     <a href="../paginas/paginaInicial.html#servicos">Serviços</a>
                     <a href="../paginas/agendarHorario.html">Agendar</a>
@@ -45,14 +45,14 @@
                         <li><a href="../paginas/paginaCadastroProfissional.html">Profissional</a></li>
                     </ul>
                 </div>
-                <a href=""><img src="/imagens/icones/user.png" alt=""></a>
+                <a href=""><img src="../imagens/icones/user.png" alt=""></a>
             </div>
         </div>
     </header>
     <div class="conteiner">
         <fieldset class="conteudo">
             <h1 class="bi bi-chat-left-dots-fill"> Registros</h1>
-            <form >
+            <form   id="form" submit="/paginas/paginaEscolhaProfissional.html">
                 <main id="form2">
                     <label for="eletronico"></label>
                     <input type="text" name="eletronico" id="eletronico" placeholder="Eletrônico" list="lsteletronico">
@@ -82,7 +82,7 @@
                     <textarea  type="text" name="msn" id="msg" cols="30" rows="10" placeholder="Registre seu empecilho:" ></textarea >
                 </main>
                 <div class="botao">
-                    <button class="bi bi-send-plus-fill" type="submit"></button>
+                    <button class="bi bi-send-plus-fill" type="submit" id="enviar"></a></button>
                     <button class="bi bi-arrow-repeat" type="reset"></button>
                 </div>
             </form>
@@ -125,23 +125,30 @@
             window.location.href = "tel:" + numeroTelefone;
         }
 
-        const form = document.querySelector("form");
-        const eletronicInput = document.querySelector("eletronico");
-        const msgInput = document.querySelector("msg");
+        const form = document.getElementById("form");
+        const eletronicInput = document.getElementById("eletronico");
+        const msgInput = document.getElementById("msg");
+        const enviar = document.getElementById("enviar");
 
 
-        form.addEventListener("click", (event) => {
-            event.preventDefault();
+        enviar.addEventListener("click", (event) => {
+            
 
-            if(eletronicInput.value === "") {
+            if(eletronicInput.value == "") {
+                event.preventDefault();
                 alert("Por favor, preencha o campo ");
                 return;
             }
 
-            if( msgInput.value === "" || !isEmailValid(emailInput.value)) {
-                alert("Por favor, preencha o campo ");
+            if( msgInput.value ==    "") {
+                event.preventDefault();
+                alert("Por favor, preencha o campo texto");
                 return;
             }
+            else{
+                form.action("/paginas/paginaEscolhaProfissional.html");
+            }
+            
         });
     </script>
     

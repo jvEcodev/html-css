@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --font-pop: 'Poppins', sans-serif;
+}
+
+* {
+
+    font-family: var(--font-pop);
+
+}
+
+body {
+    background: white;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    background: url(../imagens/background.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    color: rgb(0, 0, 0);
+    background: rgba(226, 224, 224, 0.863);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 40%;
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.upside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    right: 5px;
+}
+
+.upside a{
+    position: absolute;
+    left: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: blueviolet;
+    border-radius: 25%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.upside h1 {
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    margin: 0;
+    position: relative;
+    left: 5px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.input-field input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 0 10px 0;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.349);
+    background-color: rgba(255, 255, 255, 0.219);
+}
+
+
+input:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.767);
+    scale: 1.03;
+}
+
+.div_botao{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.envio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.envio:hover{
+    transform: scale(1.1);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+

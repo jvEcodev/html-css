@@ -332,7 +332,9 @@ th:hover {
     cursor:auto;
 }
 
-
+td:has(input:checked) {
+    background-color: #a64cfb;
+}
 
 td:active {
     background-color: #a64cfb;
