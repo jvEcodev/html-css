@@ -1,0 +1,36 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    background-color: white;
+    width: 98%;
+    height: 500px;
+    display: flex;
+}
+
+.leftSide,
+.rightSide {
+    width: 25%;
+    background-color: #ff0000;
+}
+
+
+.Center {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Center > img {
+    width: 50%;
+    height: 50%;
+}

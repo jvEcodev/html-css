@@ -16,6 +16,7 @@ body {
 }
 
 .cabecalho {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,6 +122,11 @@ button[id="botao_emergencia"]{
     color: rgb(7, 0, 145);
     font-size: 70px;
     text-decoration: none;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .logo {

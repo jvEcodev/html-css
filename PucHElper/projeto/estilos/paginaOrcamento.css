@@ -28,6 +28,7 @@ html{
     padding-bottom: 30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
     width: 100%;
+    padding-top: 10px;
 }
 
 .up_side {
@@ -226,11 +227,7 @@ button:active {
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
-    
-    
-    
-    
-    
+
 }
 ::-webkit-scrollbar{
     width: 10px;

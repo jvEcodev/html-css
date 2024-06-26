@@ -32,6 +32,7 @@ html{
     padding-bottom: 30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
     z-index: 1;
+    padding-top: 10px;
 }
 
 .up_side {
@@ -213,11 +214,13 @@ button:active {
 .conteiner  h1{
     margin-top: 0px;
     color: rgb(255, 255, 255);
-    text-align: center;          background-color:blueviolet;
+    text-align: center;         
+    background-color:blueviolet;
     border-radius: 10px; 
     padding: 5px; 
     width: 200px ;
     font-weight: bold;
+    margin-left: 40%;
 }
 
 
